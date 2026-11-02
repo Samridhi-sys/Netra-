@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% set active='awareness' %}
+{% block title %}Awareness{% endblock %}
+{% block content %}
+<div class="wrap"><section id="aware"><h2 class="rv">Cyber Crime Awareness</h2><p class="sub rv">Watch how a digital arrest scam unfolds, scene by scene, and what to do when it happens to you.</p>
+<div class="card rv" style="padding:16px"><video id="vid" controls preload="metadata" hidden style="width:100%;border-radius:16px;margin-bottom:14px"></video>
+<div class="player"><div class="stage2" id="st" aria-live="polite"></div><div class="pgb"><b id="pb"></b></div></div>
+<div class="ctl"><button class="btn alt" id="pv" aria-label="Previous scene">‹</button><button class="btn" id="pp">Pause</button><button class="btn alt" id="nx2" aria-label="Next scene">›</button><span class="note" id="sc2"></span></div>
+<div class="ctl aud"><button class="btn alt" id="snd">🔊 Sound on</button><label class="vol" for="vol">Volume<input type="range" id="vol" min="0" max="100" value="80"></label></div><p class="note" id="nn"></p></div>
+<div class="card rv" style="margin-top:20px"><h3>Remember</h3><ul class="tick"><li>Agencies never arrest or ask for money over a call.</li><li>Nobody real tells you to keep it secret.</li><li>Verify with the official number from the agency’s own website.</li><li>If you already paid: call 1930 right away.</li></ul></div></section></div>
+{% endblock %}
+{% block js %}<script src="/static/sound.js"></script><script src="/static/awareness.js"></script>{% endblock %}

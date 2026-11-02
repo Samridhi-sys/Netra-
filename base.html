@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% block title %}Netra AI{% endblock %} – Smarter Alerts. Safer You.</title>
+<meta name="theme-color" content="#3b55d9"><link rel="manifest" href="/static/manifest.webmanifest"><link rel="icon" href="/static/icons/icon-192.png"><link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Caveat:wght@600&family=Noto+Sans+Devanagari:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+<nav class="nav"><div class="wrap"><a class="lg" href="/">👁️ Netra AI</a><div class="lk"><a href="/" class="{{ 'on' if active=='home' }}">Home</a><a href="/checker" class="{{ 'on' if active=='checker' }}">Scam Checker</a><a href="/tracer" class="{{ 'on' if active=='tracer' }}">Link Tracer</a><a href="/library" class="{{ 'on' if active=='library' }}">Scam Library</a><a href="/awareness" class="{{ 'on' if active=='awareness' }}">Awareness</a><a href="/quiz" class="{{ 'on' if active=='quiz' }}">Spot the Scam</a><a href="/safety" class="{{ 'on' if active=='safety' }}">Report &amp; Privacy</a><a href="/how" class="{{ 'on' if active=='how' }}">How it works</a></div><div style="display:flex;gap:8px"><button class="ib" id="ins" hidden>Install</button><button class="ib" id="lg" aria-label="Switch language">हिं</button><button class="ib" id="th" aria-label="Toggle theme">🌓</button></div></div></nav>
+<main>
+{% block content %}{% endblock %}
+</main>
+<footer class="rv"><h2>Netra keeps watch, so you don’t have to.</h2><p>Every call, message and link, checked before you act.</p><em>Smarter Alerts. Safer You.</em></footer>
+<script src="/static/i18n.js"></script>
+<script src="/static/common.js"></script>
+{% block js %}{% endblock %}
+</body>
+</html>

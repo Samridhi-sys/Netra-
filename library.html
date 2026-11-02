@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% set active='library' %}
+{% block title %}Scam Library{% endblock %}
+{% block content %}
+<div class="wrap"><section id="library"><h2 class="rv">Scam Library</h2><p class="sub rv">Learn how each scam works and what to do. Tap a card to open it.</p>
+<div class="rv"><input id="q" placeholder="Search scams, e.g. parcel, UPI, job…"><div class="chips" id="cf"></div><div class="lib" id="lib"></div></div></section>
+
+</div>
+{% endblock %}
+{% block js %}<script src="/static/data.js"></script><script src="/static/library.js"></script>{% endblock %}

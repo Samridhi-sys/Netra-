@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% set active='home' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<header class="hero">
+<div>
+<div class="brand">
+<svg class="shield" viewBox="0 0 80 88" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4b6bff"/><stop offset="1" stop-color="#7a35d8"/></linearGradient></defs><path d="M4 44Q40 4 76 44Q40 84 4 44Z" fill="url(#g)" stroke="#2c3aa8" stroke-width="3"/><circle cx="40" cy="44" r="19" fill="#fff"/><circle cx="40" cy="44" r="10" fill="#14204a"/><circle cx="44" cy="40" r="3.5" fill="#fff"/></svg>
+<div><h1>Netra AI</h1><p class="tag">Smarter Alerts. Safer You.</p></div>
+</div>
+<p class="lead">An AI-powered cyber-fraud detection and awareness tool that protects you from new and unknown scams, before it’s too late.</p>
+<div class="quote">Because cyber criminals keep changing. So should your protection.</div>
+<div class="icons">
+<div><em>🧠</em><b>Detects</b>suspicious activity</div>
+<div><em>💡</em><b>Explains</b>new scam tactics</div>
+<div><em>🛡️</em><b>Warns</b>before you act</div>
+<div><em>🔒</em><b>Respects</b>your privacy</div>
+</div>
+</div>
+<div class="stage"><div class="halo"></div>
+<div class="phone"><div class="screen"><small>10:24</small><div class="scan"></div>
+<div class="msg"><b>Message</b>You have a case registered against you. Pay now to avoid legal action. – CBI<i>10:24 AM</i></div>
+<div class="msg m2"><b>WhatsApp</b>You have a case registered against you. Pay now to avoid legal action. – CBI<i>10:24 AM</i></div>
+<div class="alert"><h4>⚠ Potential Scam Detected!</h4><p>This message may be part of a new digital arrest scam. Be careful!</p><strong>Why it’s risky?</strong><ul><li>Uses fear and urgency</li><li>Claims to be from a government agency</li><li>Requests immediate payment</li></ul><div>Learn more</div></div>
+</div></div></div>
+</header><section><h2 class="rv">Start here</h2><div class="cta rv"><a class="card" href="/checker"><span>🔎</span><h3>Scam Checker</h3><p>Paste a message or call script and see why it looks risky.</p></a><a class="card" href="/tracer"><span>⤳</span><h3>Link Tracer</h3><p>Follow a link through every redirect before you open it.</p></a><a class="card" href="/awareness"><span>🎬</span><h3>Awareness video</h3><p>A 30-second walk through a digital arrest scam.</p></a><a class="card" href="/library"><span>📚</span><h3>Scam Library</h3><p>Red flags and safe steps for eight common scams.</p></a><a class="card" href="/quiz"><span>🧠</span><h3>Spot the Scam</h3><p>Ten quick messages. Real or scam?</p></a><a class="card" href="/safety"><span>📋</span><h3>Report &amp; Privacy</h3><p>Emergency checklist and a cyber cell report draft.</p></a></div></section>
+{% endblock %}
+{% block js %}{% endblock %}

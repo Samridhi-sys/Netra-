@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% set active='how' %}
+{% block title %}How It Works{% endblock %}
+{% block content %}
+<div class="wrap"><section id="how"><h2 class="rv">How It Works</h2>
+<p class="sub rv">Netra AI works in the background, continuously analysing your phone’s activity and the latest cyber threat updates.</p>
+<div class="steps rv">
+<div class="step"><span class="n" style="background:#3b82f6">1</span><div class="ic" style="background:var(--p2)">📱</div><h3>Monitors Your Phone</h3><p>Looks at messages, calls, notifications and links (with your permission).</p></div>
+<div class="step"><span class="n" style="background:#8a4fe8">2</span><div class="ic" style="background:var(--p1)">🌐</div><h3>Fetches Latest Threats</h3><p>Uses TinyFish + trusted sources (news, advisory, cyber cells) to learn new scam tactics.</p></div>
+<div class="step"><span class="n" style="background:#1f9d63">3</span><div class="ic" style="background:var(--p3)">🧠</div><h3>Analyses &amp; Matches</h3><p>Compares what it finds with known and emerging fraud patterns using AI + rules.</p></div>
+<div class="step"><span class="n" style="background:#f08a1c">4</span><div class="ic" style="background:var(--p4)">⚠️</div><h3>Warns You</h3><p>Gives clear, simple alerts with reasons and safe next steps.</p></div>
+<div class="step"><span class="n" style="background:#14a3b8">5</span><div class="ic" style="background:var(--p2)">✅</div><h3>Optional Reporting</h3><p>With your consent, shares relevant threat information with cyber authorities (using minimal data).</p></div>
+</div><div class="bar"><b id="prog"></b></div></section>
+
+</div>
+{% endblock %}
+{% block js %}<script src="/static/how.js"></script>{% endblock %}

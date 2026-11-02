@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% set active='checker' %}
+{% block title %}Scam Checker{% endblock %}
+{% block content %}
+<div class="wrap"><section id="try"><h2 class="rv">Scam Checker</h2>
+<p class="sub rv">Paste a message, link or call script. The analysis runs on your device, and nothing you paste is sent anywhere or stored.</p>
+<div class="two rv">
+<div class="card"><label for="txt">Message, link or call script</label><textarea id="txt" placeholder="Paste something suspicious here…"></textarea>
+<div class="chips" id="smp"><button class="chip" data-s="This is Cyber Crime branch. A case is registered against you and a warrant is issued. Stay on the video call, do not tell anyone, and pay now to avoid arrest.">Digital arrest</button><button class="chip" data-s="Dear customer, your SBI KYC expires today and your account will be blocked. Update now: http://sbi-kyc-update.xyz/login and share the OTP.">KYC link</button><button class="chip" data-s="Congratulations! You won ₹25,00,000 in lucky draw. Pay ₹4,999 processing fee on UPI to claim your prize today.">Lottery</button><button class="chip" data-s="Hi, are we still meeting at 1 for lunch? I’ll book the table.">Normal message</button></div>
+<button class="btn" id="go">Check now</button> <button class="btn alt" id="clr">Clear</button></div>
+<div class="card"><div class="gauge"><svg viewBox="0 0 160 160" width="170" height="170"><circle class="bg" cx="80" cy="80" r="70"/><circle class="fg" id="fg" cx="80" cy="80" r="70"/></svg><b id="sc">–</b></div>
+<div class="vd" id="vd">Waiting for a message</div><ul class="rl" id="rl"><li class="nx">Reasons and safe next steps appear here.</li></ul><div class="hist" id="hist"></div><button class="btn alt" id="sh" style="display:block;margin:12px auto 0">Share warning</button></div>
+</div></section></div>
+{% endblock %}
+{% block js %}<script src="/static/checker.js"></script>{% endblock %}

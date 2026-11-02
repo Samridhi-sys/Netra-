@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% set active='safety' %}
+{% block title %}Report & Privacy{% endblock %}
+{% block content %}
+<div class="wrap"><section id="safety"><h2 class="rv">Privacy Controls &amp; Reporting</h2><p class="sub rv">You decide what Netra AI can look at and whether anything is ever shared. Choices are saved only in this browser.</p>
+<div class="two rv">
+<div class="card"><h3>🔒 Permissions</h3>
+<div class="tg"><div>Messages<small>Look at messages for scam patterns</small></div><span class="sw"><input type="checkbox" id="t1"><i></i></span></div>
+<div class="tg"><div>Calls<small>Flag impersonation and fake calls</small></div><span class="sw"><input type="checkbox" id="t2"><i></i></span></div>
+<div class="tg"><div>Links<small>Check links before you open them</small></div><span class="sw"><input type="checkbox" id="t3"><i></i></span></div>
+<div class="tg"><div>Reporting to cyber cells<small>Share minimal threat info, only with your consent</small></div><span class="sw"><input type="checkbox" id="t4"><i></i></span></div>
+<p class="note">Message content is never stored. Only threat patterns are used.</p>
+<h3 style="margin-top:22px">🚨 Already paid or shared a code?</h3><div class="ck">
+<label><input type="checkbox"><span>Call 1930 (National Cyber Crime Helpline) right away</span></label>
+<label><input type="checkbox"><span>Call your bank to block cards, UPI and net banking</span></label>
+<label><input type="checkbox"><span>Screenshot messages, numbers, links and payment receipts</span></label>
+<label><input type="checkbox"><span>File a complaint at cybercrime.gov.in</span></label>
+<label><input type="checkbox"><span>Change passwords and sign out of other devices</span></label></div></div>
+<div class="card"><h3>📋 Report to cyber cell</h3><p><a id="cell" class="btn alt" target="_blank" rel="noopener" href="https://www.google.com/maps/search/cyber+crime+police+station+near+me">Find nearest cyber cell</a></p><p class="note" id="rn">Turn on “Reporting to cyber cells” to create a report.</p>
+<label for="rt">Scam type</label><select id="rt"></select>
+<label for="ra">Amount lost (₹), if any</label><input id="ra" type="number" min="0" placeholder="0">
+<label for="rd">Date</label><input id="rd" type="date">
+<label for="ro">Report draft</label><textarea id="ro" readonly style="min-height:150px"></textarea>
+<div style="margin-top:12px"><button class="btn" id="rg" disabled>Create report</button> <button class="btn alt" id="rc">Copy</button> <a class="btn alt" href="https://cybercrime.gov.in" target="_blank" rel="noopener">Open portal</a></div></div>
+</div></section>
+
+</div>
+{% endblock %}
+{% block js %}<script src="/static/data.js"></script><script src="/static/safety.js"></script>{% endblock %}

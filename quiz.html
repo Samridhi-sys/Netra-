@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% set active='quiz' %}
+{% block title %}Spot the Scam{% endblock %}
+{% block content %}
+<div class="wrap"><section id="quiz"><h2 class="rv">Spot the Scam</h2><p class="sub rv">Ten messages. Three lives. Beat the clock!</p>
+<div class="qz rv card" id="qg">
+<div class="hud" id="qh" hidden><span id="hl"></span><span id="hk"></span><span id="hs"></span><button class="ib" id="hm" aria-label="Sound">🔊</button></div>
+<div class="pg"><b id="qp"></b></div>
+<div class="tm" id="tmr" hidden><b id="qt"></b></div>
+<div class="qm" id="qm"></div>
+<div class="qb" id="qbx" hidden><button class="btn" id="qs" style="background:var(--bad)">Scam</button><button class="btn" id="qr" style="background:var(--ok)">Looks real</button></div>
+<div style="margin-top:12px" id="qhw" hidden><button class="chip" id="qhint"></button></div>
+<div class="qf" id="qf" aria-live="polite"></div>
+<div class="qb"><button class="btn" id="qn" hidden>Next</button></div>
+</div></section></div>
+{% endblock %}
+{% block js %}<script src="/static/sound.js"></script><script src="/static/quiz.js"></script>{% endblock %}

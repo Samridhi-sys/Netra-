@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% set active='tracer' %}
+{% block title %}Link Tracer{% endblock %}
+{% block content %}
+<div class="wrap"><section id="tracer">
+<h2 class="rv">Link Tracer</h2>
+<p class="sub rv">Follow a link through every redirect to see where it really lands, without opening it yourself.</p>
+<div class="card rv">
+<label for="tu">Link to trace</label>
+<input id="tu" inputmode="url" placeholder="https://bit.ly/…">
+<div style="margin-top:12px"><button class="btn" id="bt">Trace redirects</button> <button class="btn alt" id="bd">Try a demo chain</button></div>
+<div id="to" aria-live="polite"></div>
+</div>
+</section>
+</div>
+{% endblock %}
+{% block js %}<script src="/static/tracer.js"></script>{% endblock %}
